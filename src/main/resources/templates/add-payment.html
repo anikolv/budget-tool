@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		
+		<title>Budget tool web application</title>
+		
+		<link rel="stylesheet" href="/webjars/bootstrap/4.3.1/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="/webjars/font-awesome/5.8.1/css/all.css" />
+		<link rel="stylesheet" href="/css/styles.css" />
+	</head>
+	<body class="container">
+		<span th:include="navbar :: fragment" th:remove="tag"></span>
+		
+		<form th:action="@{/data/payments/add}" th:object="${payment}" method="post">
+		  <div class="form-group">
+		    <label for="amount">Amount</label>
+		    <input th:field="*{amount}" type="text" class="form-control" placeholder="Enter amount">
+		  </div>
+		  <div class="form-group">
+		    <label for="date">Date</label>
+		    <input th:field="*{date}" type="date" class="form-control" placeholder="Enter date">
+		  </div>
+		  <div class="form-group">
+			  <label for="budgetCategory">Category</label>
+			  <select th:field="*{budgetCategory}" class="form-control">
+			    <option value="Housing">Housing</option>
+			    <option value="Food and Groceries">Food and Groceries</option>
+			    <option value="Personal Care">Personal Care</option>
+			    <option value="Entertainment">Entertainment</option>
+			    <option value="Health Care">Health Care</option>
+			    <option value="Utilities">Utilities</option>
+			  </select>
+			</div>
+		  <div class="form-group">
+		    <label for="comment">Comment</label>
+		    <input th:field="*{comment}" type="text" class="form-control" id="commentInput" placeholder="Enter comment">
+		  </div>
+		  <button type="submit" class="btn btn-primary">Add payment</button>
+		</form>
+
+		<script type="text/javascript" src="/webjars/jquery/3.4.0/jquery.min.js"></script>
+		<script type="text/javascript" src="/webjars/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	</body>

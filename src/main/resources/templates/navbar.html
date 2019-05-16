@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:fragment="fragment">
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+	  <a class="navbar-brand pb-2" href="/">Personal Budget Management</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+	    <ul class="navbar-nav">
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          Data
+	        </a>
+	        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	          <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle">Budget categories</a>
+	            <ul class="dropdown-menu">
+	              <li><a class="dropdown-item" href="/data/budget/categories">Show budget categories</a></li>
+	              <li><a class="dropdown-item" href="">Add budget category</a></li>
+	              <li><a class="dropdown-item" href="">Edit/delete budget category</a></li>
+	              <li><a class="dropdown-item" href="">Enable/disable budget category</a></li>
+	            </ul>
+	          </li>
+	          <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle">Budgets</a>
+	            <ul class="dropdown-menu">
+	              <li><a class="dropdown-item" href="">Create monthly budget</a></li>
+	              <li><a class="dropdown-item" href="">Edit monthly budget</a></li>
+	              <li><a class="dropdown-item" href="">Copy budget</a></li>
+	              <li><a class="dropdown-item" href="">Multiple budgets configuration</a></li>
+	            </ul>
+	          </li>
+	          <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle">Payments</a>
+	            <ul class="dropdown-menu">
+	              <li><a class="dropdown-item" href="/data/payments/add">Add payment</a></li>
+	              <li><a class="dropdown-item" href="">Edit/delete payment</a></li>
+	              <li><a class="dropdown-item" href="">Alerts configuration</a></li>
+	            </ul>
+	          </li>
+	          <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle">Incomes</a>
+	            <ul class="dropdown-menu">
+	              <li><a class="dropdown-item" href="">Define monthly incomes</a></li>
+	              <li><a class="dropdown-item" href="">Create income category</a></li>
+	              <li><a class="dropdown-item" href="">Configure monthly income by category</a></li>
+	            </ul>
+	          </li>
+	        </ul>
+	      </li>
+	      
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          Reports
+	        </a>
+	        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	          <li><a class="dropdown-item" href="/data/payments/show">Show all payments</a></li>
+	          <li><a class="dropdown-item" href="#">Planned / spent amount difference</a></li>
+	          <li><a class="dropdown-item" href="#">Percentage money spent</a></li>
+	          <li><a class="dropdown-item" href="#">Period based report</a></li>
+	        </ul>
+	      </li>
+	      
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          BI
+	        </a>
+	        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	          <li><a class="dropdown-item" href="#">Recommend planned ammounts</a></li>
+	          <li><a class="dropdown-item" href="#">Analyze data</a></li>
+	        </ul>
+	      </li>
+	      
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          Social
+	        </a>
+	        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	          <li><a class="dropdown-item" href="#">Share</a></li>
+	        </ul>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
+</html>

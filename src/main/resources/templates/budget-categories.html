@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		
+		<title>Budget tool web application</title>
+		
+		<link rel="stylesheet" href="/webjars/bootstrap/4.3.1/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="/webjars/font-awesome/5.8.1/css/all.css" />
+		<link rel="stylesheet" href="/css/styles.css" />
+	</head>
+	<body class="container">
+		<span th:include="navbar :: fragment" th:remove="tag"></span>
+		
+				
+		<table class="table table-dark">
+		  <thead>
+		    <tr>
+		      <th scope="col">#</th>
+		      <th scope="col">Name</th>
+		      <th scope="col">Description</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+		      <th scope="row">1</th>
+		      <td>Housing</td>
+		      <td>household maintenance and repairs, renters or homeowners insurance and property taxes</td>
+		    </tr>
+		    <tr>
+		      <th scope="row">2</th>
+		      <td>Food and Groceries</td>
+		      <td>Monthly food expenses</td>
+		    </tr>
+		    <tr>
+		      <th scope="row">3</th>
+		      <td>Personal Care</td>
+		      <td>Salons, hair care products, personal hygiene and laundry supplies, shoes and shoe repair, clothing and dry</td>
+		    </tr>
+		     <tr>
+		      <th scope="row">4</th>
+		      <td>Entertainment</td>
+		      <td>Parks, cinemas</td>
+		    </tr>
+		    <tr>
+		      <th scope="row">5</th>
+		      <td>Health Care</td>
+		      <td>Premiums for health, disability, vision and dental insurance</td>
+		    </tr>
+		    <tr>
+		      <th scope="row">6</th>
+		      <td>Utilities</td>
+		      <td>Gas, electricity, water and sewage, land line and cell phone payments, cable television and Internet access</td>
+		    </tr>
+		  </tbody>
+		</table>
+				
+		<script type="text/javascript" src="/webjars/jquery/3.4.0/jquery.min.js"></script>
+		<script type="text/javascript" src="/webjars/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	</body>
