@@ -28,3 +28,13 @@
 nav {
   display: flex
 }
+
+body {
+	  /* The image used */
+  background-image: url("/images/image.jpg");
+
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
