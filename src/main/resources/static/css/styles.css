@@ -15,3 +15,16 @@
     text-decoration: underline;
     transform: rotate(-90deg);
 } 
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 87%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #343A40;
+}
+
+nav {
+  display: flex
+}

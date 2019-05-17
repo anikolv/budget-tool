@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="/webjars/font-awesome/5.8.1/css/all.css" />
 		<link rel="stylesheet" href="/css/styles.css" />
 	</head>
-	<body class="container">
+	<body class="container" style="background-color: aliceblue;">
 		<span th:include="navbar :: fragment" th:remove="tag"></span>
 		
 		<form th:action="@{/data/payments/add}" th:object="${payment}" method="post">
@@ -36,8 +36,10 @@
 		    <label for="comment">Comment</label>
 		    <input th:field="*{comment}" type="text" class="form-control" id="commentInput" placeholder="Enter comment">
 		  </div>
-		  <button type="submit" class="btn btn-primary">Add payment</button>
+		  <button type="submit" class="btn btn-success">Add payment</button>
 		</form>
+		
+		<span th:include="footer :: fragment" th:remove="tag"></span>
 
 		<script type="text/javascript" src="/webjars/jquery/3.4.0/jquery.min.js"></script>
 		<script type="text/javascript" src="/webjars/bootstrap/4.3.1/js/bootstrap.min.js"></script>

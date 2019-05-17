@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="/webjars/font-awesome/5.8.1/css/all.css" />
 		<link rel="stylesheet" href="/css/styles.css" />
 	</head>
-	<body class="container">
+	<body class="container" style="background-color: aliceblue;">
 		<span th:include="navbar :: fragment" th:remove="tag"></span>
 		
 				
@@ -54,6 +54,8 @@
 		    </tr>
 		  </tbody>
 		</table>
+		
+		<span th:include="footer :: fragment" th:remove="tag"></span>
 				
 		<script type="text/javascript" src="/webjars/jquery/3.4.0/jquery.min.js"></script>
 		<script type="text/javascript" src="/webjars/bootstrap/4.3.1/js/bootstrap.min.js"></script>
